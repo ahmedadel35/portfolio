@@ -220,8 +220,8 @@
                                     data-interval="5000"
                                 >
                                     <img
-                                        :src="'/img/projects/' + i"
-                                        class="d-block w-100"
+                                        v-lazy="'/img/projects/' + i"
+                                        class="d-block w-100 p-img"
                                         :alt="mp.title"
                                     />
                                 </div>
@@ -253,7 +253,9 @@
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
-                        {{ mp.info }}
+                        <p class="pt-3">
+                            {{ mp.info }}
+                        </p>
                     </div>
                     <div class="modal-footer">
                         <button
@@ -510,6 +512,16 @@ export default class ProjectList extends Vue {
     }
     @include media('>lg') {
         height: 25vh;
+    }
+}
+
+.p-img {
+    height: 40vh;
+    @include media('>sm') {
+        height: 40vh;
+    }
+    @include media('>md') {
+        height: 60vh;
     }
 }
 </style>

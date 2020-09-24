@@ -10,6 +10,10 @@ export default {
      */
     target: 'static',
 
+    generate: {
+        fallback: true,
+    },
+
     // router base for github pages
     // router: {
     //     base: '/<repository-name>/',
