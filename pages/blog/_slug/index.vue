@@ -61,7 +61,7 @@
         </h2>
 
         <!-- post body -->
-        <p v-html="post.body"></p>
+        <p class="post-body" v-html="post.body"></p>
 
         <!-- post comments -->
         <comments :post-slug="post.slug" :post-id="post.id" />
@@ -151,6 +151,16 @@ export default class Page extends Vue {
     }
     @include media('>lg') {
         height: 45vh;
+    }
+}
+.post-body {
+    pre {
+        background-color: #383838;
+        padding: 0.5rem;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
     }
 }
 </style>

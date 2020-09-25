@@ -15,6 +15,10 @@
             <i class="fas fa-link"></i>
             Go To Post
         </nuxt-link>
+        <button class="btn btn-danger" @click.prevent="printBody">
+            <i class="fas fa-arrow-up"></i>
+            ShowPostBody
+        </button>
         <div v-if="content.length" class="editor">
             <editor
                 ref="toastuiEditor"
@@ -27,6 +31,7 @@
             />
             <viewer :initialValue="content" height="500px" :plugins="plugins" />
         </div>
+        <textarea ref="html"></textarea>
     </div>
 </template>
 <script lang="ts">
@@ -61,6 +66,7 @@ import { Viewer } from '@toast-ui/vue-editor'
 })
 export default class UpdatePost extends Vue {
     @Ref('toastuiEditor') readonly editor!: Editor
+    @Ref('html') readonly txt!: HTMLTextAreaElement
 
     public loading: boolean = false
     public slug: string = this.$route.params.slug
@@ -109,6 +115,17 @@ export default class UpdatePost extends Vue {
         this.$nf.success()
     }
 
+    printBody() {
+        console.log(this.body)
+        this.txt.value = this.body
+        setTimeout(() => {
+            this.txt.select()
+            this.txt.setSelectionRange(0, 99999)
+            document.execCommand('copy')
+            this.$nf.info('Copied')
+        }, 500)
+    }
+
     get title(): string {
         return this.$i18n.t('admin.title.updatePost') as string
     }
@@ -122,3 +139,8 @@ export default class UpdatePost extends Vue {
     }
 }
 </script>
+<style lang="scss">
+.tui-editor-contents pre {
+    color: #000;
+}
+</style>
