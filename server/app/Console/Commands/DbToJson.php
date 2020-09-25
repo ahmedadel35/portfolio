@@ -7,6 +7,7 @@ use App\Http\Controllers\CategoryController;
 use App\Post;
 use App\Project;
 use DB;
+use File;
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Collection;
 use Storage;
@@ -45,9 +46,9 @@ class DbToJson extends Command
     public function handle()
     {
         $this->warn('Deleting old files');
-        Storage::disk('custom')->delete(
-            Storage::disk('custom')->allFiles('data/')
-        );
+        File::deleteDirectory('../data');
+        sleep(1);
+        Storage::disk('custom')->makeDirectory('data');
         $this->info('Deleted Successfully');
         $this->warn(str_repeat('-', 15));
 
@@ -75,7 +76,7 @@ class DbToJson extends Command
 
         // save fetched data
         $this->saveFetchedData(
-            Post::all(),
+            Post::latest()->get(),
             'posts/index'
         );
 
@@ -101,8 +102,9 @@ class DbToJson extends Command
         $this->warn('Retriving posts');
 
         $posts = Post::latest()->paginate();
+        // dd(json_encode($posts));
         foreach (range(1, $posts->lastPage()) as $i) {
-            Storage::disk('custom')->put('data/' . 'posts' . '/' . $i . '.json', json_encode(Post::paginate(
+            Storage::disk('custom')->put('data/' . 'posts' . '/' . $i . '.json', json_encode(Post::with('tags')->latest()->paginate(
                 null,
                 ['*'],
                 'page',
@@ -136,8 +138,9 @@ class DbToJson extends Command
         string $nameAttr = 'slug'
     ): void {
         $this->warn('Retriving ' . $dir);
-
+        // dd($collection->pluck('slug', 'img'));
         foreach ($collection as $collect) {
+            
             Storage::disk('custom')->put('data/' . $dir . '/' . $collect->{$nameAttr} . '.json', json_encode($collect));
         }
 
