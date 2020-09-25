@@ -47,6 +47,7 @@ export default {
             client: 'Client',
             visit: 'Visit',
             more_info: 'More Info',
+            download: 'Download'
         },
         contact: {
             edu: 'Education',

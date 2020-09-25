@@ -141,6 +141,15 @@
                                     <i class="fas fa-info"></i>
                                     {{ $t('home.project.more_info') }}
                                 </button>
+                                <a
+                                    :href="project.link"
+                                    class="btn btn-primary btn-sm mb-2"
+                                    target="_blank"
+                                    v-if="project.download_url.length"
+                                >
+                                    <i class="fas fa-download"></i>
+                                    {{ $t('home.project.download') }}
+                                </a>
                             </p>
                             <p class="card-text" v-if="auth">
                                 <button

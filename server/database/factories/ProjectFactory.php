@@ -14,5 +14,6 @@ $factory->define(Project::class, function (Faker $faker) {
         'info' => $faker->text,
         'img' => (Arr::random(['1.png', '2.jpg', '3.jpg', '4.jpg', '5.png', '6.jpg'], 3)),
         'type' => Arr::random(['laravel', 'spa', 'mobile']),
+        'download_url' => Arr::random(['', $faker->url]),
     ];
 });

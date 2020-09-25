@@ -47,6 +47,7 @@ export default {
             client: 'العميل',
             visit: 'زيارة',
             more_info: 'معلومات أكثر',
+            download: 'تحميل'
         },
         contact: {
             edu: 'التعليم',

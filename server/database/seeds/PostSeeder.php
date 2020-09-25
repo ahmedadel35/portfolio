@@ -34,22 +34,6 @@ class PostSeeder extends Seeder
         //     ));
         // });
 
-        // $tags = [
-        //     1 => "php"
-        //     2 => "laravel"
-        //     3 => "typescript"
-        //     4 => "vue-js"
-        //     5 => "angular"
-        //     6 => "ionic"
-        //     7 => "react-native"
-        //     8 => "lumen"
-        //     9 => "api"
-        //     10 => "bootstrap"
-        //     11 => "multi-language"
-        //     12 => "multi-user-access"
-        //     13 => "unit-testing"
-        // ];
-
         $this->createPost(
             'Laravel Tutorial Building Your First Laravel Application Part 1',
             1,
