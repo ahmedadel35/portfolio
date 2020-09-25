@@ -136,7 +136,7 @@ export default {
      ** See https://axios.nuxtjs.org/options
      */
     axios: {
-        // baseURL: 'https://nx.test/server/public/api/',
+        baseURL: 'https://nx.test/server/public/api/',
         // proxy: true,
     },
     proxy: {

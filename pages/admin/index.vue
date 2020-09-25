@@ -69,6 +69,9 @@ export default class Dashboard extends Vue {
             return
         }
 
+        // console.log(res)
+        // return
+
         this.count = {
             posts: res.posts,
             comments: res.comments,
