@@ -85,7 +85,7 @@
                 <!-- TODO animate projects array -->
                 <transition-group name="projects" tag="div" class="row">
                     <div
-                        class="col-12 col-sm-6 col-md-4 mb-3 project-card"
+                        class="col-12 col-sm-6 col-md-3 mb-3 project-card"
                         v-for="project in projects"
                         :key="project.id + project.title"
                     >
@@ -93,7 +93,7 @@
                             <template slot="img">
                                 <span
                                     class="projectType badge badge-danger text-uppercase position-absolute"
-                                    style="top: 0; left: 0;"
+                                    style="top: 0; right: 0;"
                                 >
                                     {{ project.type }}
                                 </span>
@@ -142,7 +142,7 @@
                                     {{ $t('home.project.more_info') }}
                                 </button>
                                 <a
-                                    :href="project.link"
+                                    :href="project.download_url"
                                     class="btn btn-primary btn-sm mb-2"
                                     target="_blank"
                                     v-if="project.download_url.length"
@@ -514,13 +514,13 @@ export default class ProjectList extends Vue {
 
 .project-card .card-img {
     @include media('>sm') {
-        height: 25vh !important;
+        height: 30vh !important;
     }
     @include media('>md') {
-        height: 20vh !important;
+        height: 35vh !important;
     }
     @include media('>lg') {
-        height: 25vh;
+        height: 40vh;
     }
 }
 
