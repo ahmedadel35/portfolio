@@ -115,7 +115,6 @@
                 <all-posts
                     :title="$t('home.title.index')"
                     path="post"
-                    :limit="6"
                 ></all-posts>
             </section>
 

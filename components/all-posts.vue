@@ -253,11 +253,11 @@ export default class AllPostsList extends Vue {
         }
 
         if (this.limit) {
-            data = data.splice(data.length - this.limit)
+            data = (data as object[]).splice(data.length - this.limit)
         }
 
         this.posts = data
-        // console.log(data)
+        // console.log(this.posts)
         this.loading = false
 
         if (this.limit) return
