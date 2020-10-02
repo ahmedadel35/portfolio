@@ -229,7 +229,7 @@
                                     data-interval="5000"
                                 >
                                     <img
-                                        v-lazy="'/img/projects/' + i"
+                                        :src="'/img/projects/' + i"
                                         class="d-block w-100 p-img"
                                         :alt="mp.title"
                                     />
