@@ -43,7 +43,15 @@ class ProjectSeeder extends Seeder
             'eshop',
             'http://eshopt.rf.gd/en/',
             'tester',
-            ['0AMWK1vu66EDMPmoCj7jMDddVFVY8Fs1Qp5bVrIL.jpeg', '3.jpg', '6.jpg'],
+            [
+                'AMUhi6Agyct9VUPdeHqOkLdSaGMbG33qskX7fejO.png',
+                'pCq4217bQ1DizDOtsa4uCYeS6RTvMwqhWSK0SFu.png',
+                'vYrJhLv8rgSWSqqYuAbeEaxMJNbSn6x8yrfmjIB.png',
+                'ajDNUchd5EFBCCMNg3uoXaHENO1LGUJyTHwfwp6.png',
+                'jVFt9IUMNEQHsGgjbteeVLJ2vvZrtfiGdQPE6Us.png',
+                'Pd0eamlx6RO7gZS36HJe7OmMl43UDOMSW444IK9Y.png',
+                'XiKdGkGrphdOFExBys7MOQmPF21ZfnSufreeyGv.png',
+            ],
             'an e-commerce website build with laravel 7',
             [2, 3, 4, 11, 12, 13, 10]
         );
@@ -53,7 +61,12 @@ class ProjectSeeder extends Seeder
             'Oauth 2 API',
             'http://eshopt.rf.gd/en/console',
             'tester',
-            ['0AMWK1vu66EDMPmoCj7jMDddVFVY8Fs1Qp5bVrIL.jpeg', '3.jpg', '6.jpg'],
+            [
+                'Oqx0BU7hNTy340f6HEikmvS8qK9yU2hHQKpmqwh.png',
+                'spxkX66BoR5G9dSqbbbwydSjQeGDhtCjhhqlW.png',
+                'wNsGeSqvjxQiPxhuxjneoQVLNr9owaT3RmHGPl58.png',
+                'cQ6495zWPDrPFRQJsIO4rQQb8ebzCtB6c9jZLpF.png',
+            ],
             'an oauth 2 api for my e-commerce project eshop',
             [8, 9, 11, 13, 3]
         );
@@ -63,7 +76,12 @@ class ProjectSeeder extends Seeder
             'blog test',
             'http://aboadeltestblog.epizy.com/',
             'tester',
-            ['0AMWK1vu66EDMPmoCj7jMDddVFVY8Fs1Qp5bVrIL.jpeg', '3.jpg', '6.jpg'],
+            [
+                'GXDWntTb8sTaTqSNwwruYdqPQbOVC6xYc15Gqu8.png',
+                'EuIvgR0U9trFkI8mP5vuy5K6xSgzLRROw9yLhrA.png',
+                'TZsiuOPmeeadifYUimeERCw81EXJRoKBWUUEn0.png',
+                'qG5t9I8EPatm5oSdTwnOYNfC70OsFNQTYJDxd2Yj.png',
+            ],
             'an laravel blog',
             [2, 13, 3, 4, 10]
         );
@@ -73,7 +91,12 @@ class ProjectSeeder extends Seeder
             'Cashier',
             'http://cashier.rf.gd/',
             'tester',
-            ['0AMWK1vu66EDMPmoCj7jMDddVFVY8Fs1Qp5bVrIL.jpeg', '3.jpg', '6.jpg'],
+            [
+                'l94KXZyT9phQGGUCWleUmDa4GdqjojDko6PYghM4.png',
+                'DqqfrreKdCD7UzmQWzVetacALCy1Kgv6eRVzVeT4.png',
+                'M6ObbOK9hepS0M3jLMzunkhMQ9jkDSo9RSJ9dfWH.png',
+                'pnBqhIa4rpbfq2ysbKeHugHcJtRudfGJoLpMEB4.png'
+            ],
             'An Cashier SPA for a food shop powered by angular 9 and lumen for backend',
             [8, 9, 13, 5, 3]
         );
