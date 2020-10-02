@@ -107,11 +107,13 @@ input[type='password']:focus {
     .toTop {
         right: 2rem;
     }
+    direction: ltr;
 }
 #rtl {
     .toTop {
         left: 2rem;
     }
+    direction: rtl;
 }
 
 .modal-backdrop {

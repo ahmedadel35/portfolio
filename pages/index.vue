@@ -125,7 +125,7 @@
                     class="text-center"
                     v-html="h2($t('home.title.contact'))"
                 ></span>
-                <div class="row mt-3" dir="ltr">
+                <div class="row mt-3">
                     <div class="col-sm-12 col-md-4">
                         <div
                             class="card card-body bg-transparent border-secondary m-1"
@@ -134,21 +134,23 @@
                                 <i class="fas fa-certificate"></i>
                                 {{ $t('home.contact.edu') }}
                             </p>
-                            <ul class="nav nav-pills nav-fill">
-                                <li class="nav-item text-info">
-                                    Bachelor Degree
-                                </li>
-                                <li class="nav-item text-info">
-                                    Very Good
-                                </li>
-                                <li class="nav-item text-info">
-                                    2016 – 2020
-                                </li>
-                            </ul>
-                            <strong class="text-left">
-                                Dairy Science and Technology, Faculty of
-                                Agriculture,<br />Al-Azhar University
-                            </strong>
+                            <div dir="ltr">
+                                <ul class="nav nav-pills nav-fill">
+                                    <li class="nav-item text-info">
+                                        Bachelor Degree
+                                    </li>
+                                    <li class="nav-item text-info">
+                                        Very Good
+                                    </li>
+                                    <li class="nav-item text-info">
+                                        2016 – 2020
+                                    </li>
+                                </ul>
+                                <strong class="text-left">
+                                    Dairy Science and Technology, Faculty of
+                                    Agriculture,<br />Al-Azhar University
+                                </strong>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4">
