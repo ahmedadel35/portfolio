@@ -95,9 +95,13 @@ export default {
         // Doc: https://axios.nuxtjs.org/usage
         '@nuxtjs/axios',
         'nuxt-i18n',
+        '@nuxtjs/pwa',
         '@nuxtjs/auth-next',
         ['vue-scrollto/nuxt', { duration: 500 }],
         // '@dewib/xhr-cache',
+        ['nuxt-cname-module', { baseUrl: 'https://abo3adel.github.io' }],
+        '@nuxtjs/robots',
+        '@nuxtjs/sitemap',
     ],
 
     xhrCache: {
@@ -111,6 +115,12 @@ export default {
         // headers: {
         //     'api-key': 'base64:Ltx7LO0pTz8L9YAa1kUC3XKHa3gZ8NjErEnFp209MT8=',
         // },
+    },
+
+    /** robots */
+    robots: {
+        UserAgent: '*',
+        Disallow: '/',
     },
 
     /**
@@ -144,6 +154,10 @@ export default {
             target: 'https://nx.test/server/public/api/',
             pathRewrite: { '^/laravel': '/' },
         },
+    },
+
+    meta: {
+        author: 'Ahmed Adel, abo3adel35@gmail.com',
     },
     /*
      ** Build configuration
@@ -197,5 +211,15 @@ export default {
             },
         },
         localStorage: false,
+    },
+
+    /** sitemap */
+    sitemap: {
+        hostname: 'https://abo3adel.github.io',
+        i18n: {
+            locales: ['en', 'ar'],
+            defaultLocale: 'en',
+        },
+        gzip: true,
     },
 }
