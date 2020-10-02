@@ -206,6 +206,7 @@ export default class AllPostsList extends Vue {
     @Prop({ type: String, required: true }) readonly path!: string
     @Prop({ type: Number, required: false }) readonly limit!: number
     @Prop({ type: Boolean, default: false }) readonly auth!: boolean
+    @Prop({type: Boolean, default: true}) readonly addBlogToPath!:boolean
 
     public loading: boolean = true
     public posts: PostInterface[] = []
@@ -263,7 +264,7 @@ export default class AllPostsList extends Vue {
         if (this.limit) return
 
         this.pageResponse = res
-        pushPageToHistroy(this, page, path)
+        pushPageToHistroy(this, page, path, this.addBlogToPath)
         window.scrollTo(0, 0)
     }
 

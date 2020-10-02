@@ -23,7 +23,7 @@ export function pushPageToHistroy(
     if (self.$route.path.indexOf('admin') > -1) {
         path = self.$route.path + path
     } else if (path.indexOf('categ') > -1 || path.indexOf('find') > -1) {
-        path = '/blog/' + path
+        if (addBlog) path = '/blog' + path
     } else {
         if (addBlog) path = '/blog' + path
     }

@@ -115,6 +115,7 @@
                 <all-posts
                     :title="$t('home.title.index')"
                     path="post"
+                    :add-blog-to-path="false"
                 ></all-posts>
             </section>
 
