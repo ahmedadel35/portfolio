@@ -58,7 +58,7 @@
                             class="card card-body bg-transparent text-center border-0 mb-2"
                         >
                             <div
-                                class="wyg pointer btn btn-outline-primary btn-lg fa-3x rounded w-50 mx-auto"
+                                class="wyg pointer btn btn-outline-primary btn-lg fa-3x rounded w-50 mx-auto py-4"
                             >
                                 <i :class="'fas fa-2x fa-' + p.icon"></i>
                             </div>
@@ -188,11 +188,11 @@
                                     class="list-group-item bg-transparent border-bottom border-secondary"
                                 >
                                     <a
-                                        href="http://ninjacoder.rf.gd/"
+                                        href="https://abo3adel.github.io/"
                                         class="text-light"
                                     >
                                         <i class="fas fa-link"></i>
-                                        ninjacoder.rf.gd/
+                                        abo3adel.github.io
                                     </a>
                                 </li>
                                 <li class="list-group-item bg-transparent">

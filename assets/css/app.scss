@@ -114,6 +114,9 @@ input[type='password']:focus {
         left: 2rem;
     }
     direction: rtl;
+    .px-3.pt-3.align-middle {
+        padding-top: .3rem !important;
+    }
 }
 
 .modal-backdrop {
