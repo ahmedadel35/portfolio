@@ -47,12 +47,17 @@ export default {
             client: 'العميل',
             visit: 'زيارة',
             more_info: 'معلومات أكثر',
-            download: 'تحميل'
+            download: 'تحميل',
         },
         contact: {
             edu: 'التعليم',
             personal: 'معلومات شخصية',
             social: 'وسائط',
+        },
+        alert: {
+            note: 'لاحظ',
+            alertMessage:
+                'كل هذه التطبيقات تم استضافتها على مزودى الإستضافة المجانية ، سوف يستغرق فتح الموقع بعض الوقت',
         },
     },
     footer: {

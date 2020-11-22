@@ -47,12 +47,17 @@ export default {
             client: 'Client',
             visit: 'Visit',
             more_info: 'More Info',
-            download: 'Download'
+            download: 'Download',
         },
         contact: {
             edu: 'Education',
             personal: 'Personal',
             social: 'Social',
+        },
+        alert: {
+            note: 'Note',
+            alertMessage:
+                'All These WebApps are hosted on free hosting providers, so it will take some time to start the app',
         },
     },
     footer: {

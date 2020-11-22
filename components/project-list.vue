@@ -17,6 +17,13 @@
                     </a>
                 </li>
             </ul>
+            <div
+                class="alert alert-warning my-2"
+                v-if="projectsTypes[3].val !== activeType"
+            >
+                <strong v-text="$t('home.alert.note')"></strong>
+                <span v-text="$t('home.alert.alertMessage')"></span>
+            </div>
             <div class="mt-3">
                 <div class="row">
                     <div
@@ -188,6 +195,7 @@
                 </transition-group>
             </div>
         </div>
+
         <!-- Project Modal -->
         <div
             class="modal fade"
