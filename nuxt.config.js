@@ -35,15 +35,16 @@ export default {
             {
                 hid: 'ninjacode',
                 name: 'description',
-                content: 'ab3adel portfolio and blog',
+                content: 'ab3adel(ninjaCoder) portfolio and blog',
             },
             {
                 name: 'keywords',
-                content: 'abo3adel, laravel, php, php7, typescript',
+                content:
+                    'abo3adel, laravel, laravel 8, php, php7, php8, typescript, ninjacoder, ninja coder, lumen, livewire, laravel livewire, ninjacoder portfolio, abo3adel portfolio, unit testing, eshop.rf.gd',
             },
             {
                 name: 'title',
-                content: 'ab3adel portfolio and blog',
+                content: 'ab3adel(ninjaCoder) portfolio and blog',
             },
             {
                 name: 'author',
@@ -221,5 +222,6 @@ export default {
             defaultLocale: 'en',
         },
         gzip: true,
+        exclude: ['/admin/**', '/auth/**'],
     },
 }
