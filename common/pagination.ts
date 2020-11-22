@@ -11,6 +11,8 @@ export function pushPageToHistroy(
     path: string,
     addBlog: boolean = true
 ) {
+    if (self.$route.path === '/') return
+
     // @ts-ignore
     self.$route.query.page = `${page}`
 
