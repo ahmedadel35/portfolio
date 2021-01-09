@@ -52,20 +52,20 @@ export default {
             },
         ],
         link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-        link: [
-            {
-                rel: 'stylesheet',
-                type: 'text/css',
-                href: '/css/bootstrap.min.css',
-            },
-        ],
-        link: [
-            {
-                rel: 'stylesheet',
-                type: 'text/css',
-                href: '/css/bootstrap-rtl.min.css',
-            },
-        ],
+        // link: [
+        //     {
+        //         rel: 'stylesheet',
+        //         type: 'text/css',
+        //         href: '/css/bootstrap.min.css',
+        //     },
+        // ],
+        // link: [
+        //     {
+        //         rel: 'stylesheet',
+        //         type: 'text/css',
+        //         href: '/css/bootstrap-rtl.min.css',
+        //     },
+        // ],
     },
     /*
      ** Global CSS
@@ -103,6 +103,7 @@ export default {
         ['nuxt-cname-module', { baseUrl: 'https://abo3adel.github.io' }],
         '@nuxtjs/robots',
         '@nuxtjs/sitemap',
+        '@nuxtjs/tailwindcss',
     ],
 
     xhrCache: {
@@ -164,7 +165,18 @@ export default {
      ** Build configuration
      ** See https://nuxtjs.org/api/configuration-build/
      */
-    build: {},
+    build: {
+        // postcss: {
+        //     plugins: {
+        //         precss: {},
+        //         "postcss-comment": {},
+        //     },
+        // },
+    },
+
+    tailwindcss: {
+        viewer: false,
+    },
 
     /**
      * Vue config
@@ -172,7 +184,7 @@ export default {
     vue: {
         config: {
             productionTip: false,
-            devtools: true,
+            devtools: process.env.NODE_ENV !== 'production',
         },
     },
 
