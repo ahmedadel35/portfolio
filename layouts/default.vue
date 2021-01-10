@@ -86,9 +86,9 @@ export default class Default extends Vue {
             }
         } catch (e) {}
 
-        let href = '/css/bootstrap.min.css'
+        let href = '/css/app.min.css'
         if (this.dir === 'rtl') {
-            href = '/css/bootstrap-rtl.min.css'
+            href = '/css/app-rtl.min.css'
         }
         this.createLinkTag(href)
         this.createLinkTag('/css/fontawesome.min.css')

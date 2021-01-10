@@ -56,14 +56,14 @@ export default {
             {
                 rel: 'stylesheet',
                 type: 'text/css',
-                href: '/css/bootstrap.min.css',
+                href: '/css/app.min.css',
             },
         ],
         link: [
             {
                 rel: 'stylesheet',
                 type: 'text/css',
-                href: '/css/bootstrap-rtl.min.css',
+                href: '/css/app-rtl.min.css',
             },
         ],
     },
@@ -104,19 +104,6 @@ export default {
         '@nuxtjs/robots',
         '@nuxtjs/sitemap',
     ],
-
-    xhrCache: {
-        // name: 'posts',
-        // maxAge: 3600 * 1000, // TTL of resource
-        // init: true, // Fetch the resource at nuxt start
-        // request: {
-        //     method: 'posts',
-        //     url: 'http://nx.test/server/public/api/posts',
-        // },
-        // headers: {
-        //     'api-key': 'base64:Ltx7LO0pTz8L9YAa1kUC3XKHa3gZ8NjErEnFp209MT8=',
-        // },
-    },
 
     /** robots */
     robots: {

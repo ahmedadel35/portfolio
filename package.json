@@ -12,7 +12,6 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
-    "@dewib/xhr-cache": "^3.1.0",
     "@fortawesome/fontawesome-free": "^5.14.0",
     "@imritesh/form": "^2.0.0",
     "@johmun/vue-tags-input": "^2.1.0",
@@ -58,6 +57,7 @@
     "@types/nuxtjs__auth": "^4.8.4",
     "babel-eslint": "^10.1.0",
     "bootstrap.native": "^2.0.27",
+    "cssnano": "^4.1.10",
     "es-cookie": "^1.3.2",
     "eslint": "^7.5.0",
     "eslint-config-prettier": "^6.11.0",
