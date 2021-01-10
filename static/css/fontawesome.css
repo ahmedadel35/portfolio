@@ -9,7 +9,6 @@
     font-display: block;
     src: url('../webfonts/fa-solid-900.eot');
     src: url('../webfonts/fa-solid-900.eot?#iefix') format('embedded-opentype'),
-        url('../webfonts/fa-solid-900.woff2') format('woff2'),
         url('../webfonts/fa-solid-900.woff') format('woff'),
         url('../webfonts/fa-solid-900.ttf') format('truetype'),
         url('../webfonts/fa-solid-900.svg#fontawesome') format('svg');
@@ -31,7 +30,6 @@
     font-display: block;
     src: url('../webfonts/fa-brands-400.eot');
     src: url('../webfonts/fa-brands-400.eot?#iefix') format('embedded-opentype'),
-        url('../webfonts/fa-brands-400.woff2') format('woff2'),
         url('../webfonts/fa-brands-400.woff') format('woff'),
         url('../webfonts/fa-brands-400.ttf') format('truetype'),
         url('../webfonts/fa-brands-400.svg#fontawesome') format('svg');
@@ -98,7 +96,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-blog:before {
-    content: '\f781';
+    content: '\f299';
 }
 
 .fa-certificate:before {
@@ -118,7 +116,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-comment-alt:before {
-    content: '\f27a';
+    content: '\f075';
 }
 
 .fa-download:before {
@@ -182,7 +180,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-phone-alt:before {
-    content: '\f879';
+    content: '\f095';
 }
 
 .fa-plus:before {
@@ -194,7 +192,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-sign-in-alt:before {
-    content: '\f2f6';
+    content: '\f090';
 }
 
 .fa-spinner:before {
@@ -202,7 +200,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-trash-alt:before {
-    content: '\f2ed';
+    content: '\f014';
 }
 
 .fa-twitter:before {
@@ -214,11 +212,11 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-user-alt:before {
-    content: '\f406';
+    content: '\f007';
 }
 
 .fa-user-tie:before {
-    content: '\f508';
+    content: '\f27e';
 }
 
 .fa-whatsapp:before {
@@ -234,4 +232,39 @@ readers do not read off random characters that represent icons */
     padding: 0;
     position: absolute;
     width: 1px;
+}
+
+.fa-cog:before {
+    content: '\f013';
+}
+
+.fa-phone:before {
+    content: '\f095';
+}
+
+.fa-laptop:before,
+.fa-laptop-code:before {
+    content: '\f109';
+}
+
+.fa-tablet:before,
+.fa-tablet-alt:before {
+    content: '\f10a';
+}
+
+.fa-code:before {
+    content: '\f121';
+}
+
+.fa-info:before {
+    content: '\f129';
+}
+.fa-rocket:before {
+    content: '\f135';
+}
+.fa-paper-plane:before {
+    content: '\f1d8';
+}
+.fa-send:before {
+    content: '\f1d8';
 }
