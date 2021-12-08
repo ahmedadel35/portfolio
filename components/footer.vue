@@ -46,7 +46,10 @@
             <div class="row">
                 <div class="col-12 text-center">
                     made with <span class="text-danger">&hearts;</span> by
-                    ninjaCoder 2019 - {{ new Date().getFullYear() }}
+                    <span style="font-variant: small-caps;">
+                        Ahmed Adel
+                    </span>
+                    2019 - {{ new Date().getFullYear() }}
                 </div>
             </div>
         </div>
